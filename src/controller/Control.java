@@ -37,15 +37,14 @@ public class Control {
         return docs;
     }
 
-
-
     /**
      * Create new doctor
      */
     public void CreateDoctor() {
         Doctor doc = new Doctor();
         //set id
-        doc.setId(docs.get(docs.size() - 1).getId() + 1);
+        int id = docs.size() > 0 ? docs.get(docs.size() - 1).getId() + 1 : 0;
+        doc.setId(id);
         doc.setName(checkDoctorsName());
         doc.setDateOfBirth(checkDateBirth());
         doc.setSpecialization(checkSpecialization());

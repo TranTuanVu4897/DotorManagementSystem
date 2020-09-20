@@ -28,14 +28,14 @@ public class DotorManagementSystem {
         Control control = new Control(doctors);
         while (loop) {
             System.out.println("Welcome to Doctor Management System.\n"
-                    + "--------------------------------------------"
+                    + "--------------------------------------------\n"
                     + "1. Create a Doctor profile.\n"
                     + "2. Edit a Doctor profile.\n"
                     + "3. Delete a Doctor profile.\n"
                     + "4. Search a Doctor profile.\n"
                     + "5. Sort Doctors by Date of birth.\n"
-                    + "6. Exit."
-                    + "Please choose your action:\n");
+                    + "6. Exit.\n"
+                    + "Please choose your action:");
             String input = scan.nextLine().trim();
             switch (input) {
                 case "1":
